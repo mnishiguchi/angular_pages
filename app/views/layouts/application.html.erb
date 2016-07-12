@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+  <% ng_app = controller.controller_name.camelize(:lower) %>
   <head>
     <title>Angular pages</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "#{ng_app.underscore.dasherize}/application" if angular_page? %>
   </head>
 
-  <body>
+  <body ng-app="<%= ng_app %>">
     <%= yield %>
   </body>
 </html>
