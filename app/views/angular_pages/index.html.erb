@@ -1,2 +1,11 @@
-<h1>AngularPages#index</h1>
-<p>Find me in app/views/angular_pages/index.html.erb</p>
+<section
+  ng-controller="angularPagesController"
+  ng-app="angularPages">
+  <ul>
+    <li ng-repeat="thing in things">
+      {{thing.name}}
+    </li>
+  </ul>
+</section>
+
+<%= javascript_include_tag "angular-pages/application" %>
