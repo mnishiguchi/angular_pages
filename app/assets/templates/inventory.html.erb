@@ -1,0 +1,12 @@
+<div class="container">
+
+  <h1>The Inventory View</h1>
+
+  <ul>
+    <li ng-repeat="item in vm.data">
+      <span ng-repeat="(key, value) in item">
+        {{ key }} {{ value }}
+      </span>
+    </li>
+  </ul>
+</div>

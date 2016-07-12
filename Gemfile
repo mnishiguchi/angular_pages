@@ -11,7 +11,8 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
-gem "bower-rails"
+gem 'bower-rails'
+gem 'angular-rails-templates'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
